@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.parent {
+    /* height: 100%; */ /*because when we scroll down the screen, it will automatically take the height as per need so no need to justify height here*/
+    width: 100%;
+    background-color: yellow;
+}
+
+nav {
+    padding: 30px 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .child1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    /*to create gap b/n "about""services"etc*/
+}
+
+nav h3 {
+    font-size: 20px;
+}
+
+nav a {
+    font-size: 20px;
+    color: grey;
+    text-decoration: none;
+    /*if we not use this they will be underlined coz of the a tag which demonstrates link*/
+}
+
+section {
+    padding: 0px 60px;
+}
+
+section .child2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.child2 h1 {
+    font-size: 120px;
+}
+
+.child2 .b {
+    height: 80px;
+    width: 320px;
+    background-color: black;
+    border-radius: 50px;
+    background-image: url(https://images.unsplash.com/photo-1789333001980-b87fc760b010?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: left;
+    display: flex;
+    align-items: left;
+    padding-left: 4px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+.b .play {
+    height: 100%;
+    width: 80px;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid white 2px;
+}
+
+.play i {
+    color: white;
+    font-size: 35px;
+}
+
+section .child3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 280px;
+}
+
+.child3 h1 {
+    font-size: 120px;
+}
+
+.ab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section button {
+    height: 50px;
+    width: 190px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-right: 50px;
+    /*to create space between two buttons*/
+    color: grey;
+    background-color: yellow;
+    font-size: 15px;
+
+}
+
+section .abc {
+    width: 670px;
+    height: 1px;
+    background-color: gray;
+}
+
+.image {
+    height: 600px;
+    width: 1100px;
+    background-color: black;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    margin-left: 80px;
+    margin-top: 30px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Vlv09is9cH3NlLqUUTVfWimOvYwqtYV_dV3qzOi5nUVvhmbfw5_GQRs&s=10);
+    background-size: cover;
+}
+.image .arrow{
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    right: 150px; /*this top and right are relative to entire screen*/
+    top: 400px;/*if you want relative to image class then write position:relative; in image class*/ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 5px gray;
+}
+.arrow i{
+    color: yellow;
+    font-size: 120px;
+}
